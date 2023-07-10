@@ -1,0 +1,7 @@
+C:\Users\H698233\source\repos\game_dev\Engine\bin\Debug\Engine.dll
+C:\Users\H698233\source\repos\game_dev\Engine\bin\Debug\Engine.pdb
+C:\Users\H698233\source\repos\game_dev\Engine\obj\Debug\Engine.csproj.AssemblyReference.cache
+C:\Users\H698233\source\repos\game_dev\Engine\obj\Debug\Engine.csproj.CoreCompileInputs.cache
+C:\Users\H698233\source\repos\game_dev\Engine\obj\Debug\Engine.dll
+C:\Users\H698233\source\repos\game_dev\Engine\obj\Debug\Engine.pdb
+C:\Users\H698233\source\repos\game_dev\Engine\obj\Debug\Engine.g.resources
