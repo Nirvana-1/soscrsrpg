@@ -22,7 +22,7 @@ namespace WPFAPP
     /// </summary>
     public partial class MainWindow : Window
     {
-        private GameSession _gameSession;
+        private GameSession _gameSession = new GameSession();
         public MainWindow()
         {
             InitializeComponent();
