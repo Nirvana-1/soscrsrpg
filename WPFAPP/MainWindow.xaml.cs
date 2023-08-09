@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Engine.ViewModels;
+using Engine.EventArgs;
 
 namespace WPFAPP
 {
@@ -25,8 +26,10 @@ namespace WPFAPP
         public MainWindow()
         {
             InitializeComponent();
+            
 
             _gameSession = new GameSession();
+            _gameSession.OnMessageRaised += OnGameMessageRaised;
 
             /// DataContext is a built in proerty for xaml windows
             DataContext = _gameSession;
@@ -50,6 +53,17 @@ namespace WPFAPP
         private void OnClick_MoveSouth(object sender, RoutedEventArgs e)
         {
             _gameSession.MoveSouth();
+        }
+
+        private void OnClick_AttackMonster(object sender, RoutedEventArgs e)
+        {
+            _gameSession.AttackCurrentMonster();
+        }
+
+        private void OnGameMessageRaised(object sender, GameMessageEventArgs e)
+        {
+            GameMessages.Document.Blocks.Add(new Paragraph(new Run(e.Message)));
+            GameMessages.ScrollToEnd();
         }
 
 
