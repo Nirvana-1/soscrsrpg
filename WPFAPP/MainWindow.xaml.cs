@@ -66,9 +66,9 @@ namespace WPFAPP
             GameMessages.ScrollToEnd();
         }
 
+        private void DataGrid_SelectionChanged()
+        {
 
-
-
-
+        }
     }
 }

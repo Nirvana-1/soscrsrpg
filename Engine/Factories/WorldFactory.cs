@@ -18,17 +18,22 @@ namespace Engine.Factories
                 "FarmFields.png");
             newWorld.LocationAt(-2, -1).AddMonster(2, 100);
             //Temp test quest by me. Will Remove
-            newWorld.LocationAt(-2, -1).QuestsAvalableHere.Add(QuestFactory.GetQuestByID(2));
+            newWorld.LocationAt(-2, -1).QuestsAvailableHere.Add(QuestFactory.GetQuestByID(2));
 
             newWorld.AddLocation(-1, -1, "Farmer's House",
                 "This is the house of yout neighbor, Farmer Ted",
                 "Farmhouse.png");
+            newWorld.LocationAt(-1, -1).TraderHere = TraderFactory.GetTraderByName("Farmer Ted");
+
             newWorld.AddLocation(0, -1, "home",
                 "This is your home",
                 "Home.png");
+
             newWorld.AddLocation(-1,0, "Trading Shop",
                 "The Shop of Susan ,the trader",
                 "Trader.png");
+            newWorld.LocationAt(-1, 0).TraderHere = TraderFactory.GetTraderByName("Susan");
+
             newWorld.AddLocation(0, 0, "Town square",
                 "You see a fountain here.",
                 "/Engine;component/images/Locations/TownSquare.png");
@@ -44,8 +49,8 @@ namespace Engine.Factories
             newWorld.AddLocation(0, 1, "Herbalist's hut",
                 "You see a small hut, with plants drying from the roof.",
                 "HerbalistsHut.png");
-
-            newWorld.LocationAt(0, 1).QuestsAvalableHere.Add(QuestFactory.GetQuestByID(1));
+            newWorld.LocationAt(0, 1).TraderHere = TraderFactory.GetTraderByName("Pete the Herbalist");
+            newWorld.LocationAt(0, 1).QuestsAvailableHere.Add(QuestFactory.GetQuestByID(1));
             
 
             newWorld.AddLocation(0, 2, "Herbalist's garden",
