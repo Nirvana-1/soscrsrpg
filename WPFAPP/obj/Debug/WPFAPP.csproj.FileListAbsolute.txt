@@ -16,3 +16,5 @@ C:\Users\H698233\source\repos\game_dev\WPFAPP\obj\Debug\WPFAPP.pdb
 C:\Users\H698233\source\repos\game_dev\WPFAPP\bin\Debug\Engine.dll
 C:\Users\H698233\source\repos\game_dev\WPFAPP\bin\Debug\Engine.pdb
 C:\Users\H698233\source\repos\game_dev\WPFAPP\obj\Debug\WPFAPP.csproj.CopyComplete
+C:\Users\H698233\source\repos\game_dev\WPFAPP\obj\Debug\TradeScreen.g.cs
+C:\Users\H698233\source\repos\game_dev\WPFAPP\obj\Debug\TradeScreen.baml

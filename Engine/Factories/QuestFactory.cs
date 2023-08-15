@@ -28,7 +28,7 @@ namespace Engine.Factories
                 25, 10,
                 rewardItems));
             _quests.Add(new Quest(2, "Test Quest",
-                "Just how up. don't be a dick",
+                "Just show up. don't be a dick",
                 itemsToComplete, 25, 10,
                 rewardItems));
         }

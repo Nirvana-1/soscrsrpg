@@ -66,9 +66,12 @@ namespace WPFAPP
             GameMessages.ScrollToEnd();
         }
 
-        private void DataGrid_SelectionChanged()
+        private void OnClick_DsiplayTradeScreen(object sender, RoutedEventArgs e)
         {
-
+            TradeScreen tradeScreen = new TradeScreen();
+            tradeScreen.Owner = this;
+            tradeScreen.DataContext = _gameSession;
+            tradeScreen.ShowDialog();
         }
     }
 }
