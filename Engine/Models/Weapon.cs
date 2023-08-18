@@ -10,8 +10,10 @@ namespace Engine.Models
     {
         public int MinimumDamge { get; set; }
         public int MaximumDamage { get; set; }
+        
         public Weapon(int itemTypeID, string name, int price, int minDamage, int maxDamage) 
-            : base(itemTypeID, name, price)
+            : base(itemTypeID, name, price, true)
+            //True refers to IsUniue
         {
             MinimumDamge = minDamage;
             MaximumDamage = maxDamage;
